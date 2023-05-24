@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  width: 1440px;
+  background-color: #141416;
+  margin: 0 auto;
+  height: 2899px;
+}
+
+header {
+  width: 100%;
+  height: 78px;
+  background-color: #222529;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  margin-left: 40px ;
+  margin-top: 20px;
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;
+}
+.header-logo img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.header-logo span {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 27px;
+  height: 27px;
+  font-weight: 700;
+}
+
+.header-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 19px;
+  gap: 10px;
+}
+
+.header-avatar img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.header-avatar span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FCFCFD;
+}
+/* responsive cho thằng header */
+@media screen and (max-width: 375px) {
+  .container {
+    width: 375px;
+    margin: 0 auto;
+  }
+  .container header {
+    height: 88px;
+    width: 100%;
+  }
+  .header-logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    align-items: center;
+  }
+  .header-logo img {
+    width: 28px;
+    height: 28px;
+  }
+  .header-logo span {
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+  } 
+  .header-avatar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
+  .header-avatar img{
+    width: 28px;
+    height: 28px;
+
+  }
+  .header-avatar span {
+    display: none;
+  }
+}
+
+/* thằng media sinh ra để làm gì, để responsive cho trang web của mình phù hợp với mội thiết bị  */
+
+/* khi độ rộng web site của mình mà nó quay về 375px thì nó bị ghi đè css(css lại trong thằng @media) */
+
+
+/* phan css main */
+main {
+  margin: 0 auto;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.main-title h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100px;
+  color: white;
+  margin-bottom: 26px;
+}
+.main-title .line {
+  background-color: #FA8F54;
+  width: 148px;
+  height: 10px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+/* CSS CARD */
+
+/*  */
+
+.card-one {
+  width: 1060px;
+  background-color: #3B3E44;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  /* chia flex */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.card-two {
+    width: 500px;
+  background-color: #3B3E44;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  /* chia flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.card-one img {
+  width: 464px;
+  height: 346px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  margin-left: 26px;
+}
+
+.one-detail {
+  margin-top: 26px;
+  margin-right: 105px;
+}
+
+.one-detail .detail-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.detail-date p:nth-child(1) {
+  padding: 11px 20px;
+  color:#219653;
+  background-color: rgba(88, 194, 125, 0.1);
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 10px;
+}
+
+.detail-date p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color:rgba(132, 135, 139, 1);
+}
+
+.one-detail h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 41px;
+  color: rgba(252, 252, 253, 1);
+
+  margin-bottom: 20px;
+
+}
+
+.one-detail .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(177, 181, 195, 1);
+  margin-bottom: 30px;
+}
+
+.one-detail .detail-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bot-avatar img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.detail-bot button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(231, 236, 243, 1);
+  padding: 7px 16px;
+  border: 1px solid rgba(255, 84, 61, 1);
+  background-color: transparent ;
+  border-radius: 5px;
+}
+.bot-avatar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.bot-avatar p {
+  align-content: center;
+  color: white;
+}
+.detail-bot {
+  margin-top: 20px;
+}
+
